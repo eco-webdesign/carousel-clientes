@@ -1,0 +1,152 @@
+<!-- carousel -->
+<script src="https://www.ecowebdesign.com.br/painel/bower_components/templates/Unify-v2.3/html/assets/js/components/hs.popup.js" defer></script>
+<script src="https://www.ecowebdesign.com.br/painel/bower_components/templates/Unify-v2.3/html/assets/js/components/hs.carousel.js" defer></script>
+
+<style>
+    /*! CSS Used from: http://www.ecowebdesign.com.br/painel/bower_components/templates/Unify-v2.5.1/html/assets/vendor/slick-carousel/slick/slick.css */
+    .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+        display: table;
+        content: '';
+    }
+
+    .slick-track:after {
+        clear: both;
+    }
+
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+</style>
+
+<div class="js-carousel" data-autoplay="true" data-infinite="true" data-slides-show="6" data-responsive='[{
+    "breakpoint": 1200,
+    "settings": {
+      "slidesToShow": 4
+    }
+  }, {
+    "breakpoint": 992,
+    "settings": {
+      "slidesToShow": 3
+    }
+  }, {
+    "breakpoint": 768,
+    "settings": {
+      "slidesToShow": 2
+    }
+  }, {
+    "breakpoint": 576,
+    "settings": {
+      "slidesToShow": 1
+    }
+  }]'>
+
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_155e8e21e49dc17_1586373092_175x.png" alt="Logo da empresa Unimed" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_145e8e09db7c6be_1586366939_175x.png" alt="Logo da empresa SulAmérica Saúde" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_115e8e09dbbe41e_1586366939_175x.png" alt="Logo da empresa Mediservice" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_115e8e09dc09c6c_1586366940_175x.png" alt="Logo da empresa São Francisco" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_145e8e09dc3a332_1586366940_175x.png" alt="Logo da empresa Postal Saúde" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_125e8e09dc47ea8_1586366940_175x.png" alt="Logo da empresa Iamspe" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_125e8e09dc7e856_1586366940_175x.png" alt="Logo da empresa Geap Saúde" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_115e8e09dc8d4b6_1586366940_175x.png" alt="Logo da empresa Economus" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_135e8e09dcc3e49_1586366940_175x.png" alt="Logo da empresa Consulta Mais" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_145e8e09dcd6409_1586366940_175x.png" alt="Logo da empresa Cemerp" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_135e8e09dd13f9c_1586366941_175x.png" alt="Logo da empresa Cassi" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_115e8e09dd2141d_1586366941_175x.png" alt="Logo da empresa Cabesp" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_125e8e09dd575bc_1586366941_175x.png" alt="Logo da empresa Bradesco Saúde" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_155e8e09dd5fdbe_1586366941_175x.png" alt="Logo da empresa Bensaúde" class="img-fluid lazy" />
+    </div>
+    <div class="js-slide g-mx-15">
+        <img src="https://www.ecowebdesign.com.br/painel/img/placeholder-200.jpg" data-src="https://www.ecowd.inf.br/cms/img/dropzone_upload/resized_125e8e09dd9b5a6_1586366941_175x.png" alt="Logo da empresa Amil" class="img-fluid lazy" />
+    </div>
+
+</div><!-- fim - carousel -->
+
+<!-- carousel -->
+<script>
+    $(document).on("ready", function () {
+        // initialization of popups
+        $.HSCore.components.HSPopup.init(".js-fancybox");
+
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init(".js-carousel");
+    });
+</script><!-- fim - carousel -->
